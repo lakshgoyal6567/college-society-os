@@ -3,19 +3,17 @@
 # Exit on error
 set -e
 
-# Define Flutter version
-FLUTTER_VERSION="3.38.7"
-
-# Download Flutter
+# Download Flutter using git clone (more reliable on Vercel)
 if [ ! -d "flutter" ]; then
-    echo "Downloading Flutter..."
-    curl -o flutter.tar.xz https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz
-    tar xf flutter.tar.xz
-    rm flutter.tar.xz
+    echo "Cloning Flutter SDK..."
+    git clone https://github.com/flutter/flutter.git -b stable --depth 1
 fi
 
 # Add Flutter to path
 export PATH="$PATH:$(pwd)/flutter/bin"
+
+# Ensure flutter is initialized
+flutter doctor -v
 
 # Fix for git dubious ownership in Vercel
 git config --global --add safe.directory "*"
