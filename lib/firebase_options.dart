@@ -47,13 +47,13 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDEpQS8N1K4CXz9oV-KW1isMwmF9sYmjCo',
-    appId: '1:458080177054:web:78fe1d63415d5581d0e48f',
-    messagingSenderId: '458080177054',
-    projectId: 'collegesocietyos',
-    authDomain: 'collegesocietyos.firebaseapp.com',
-    storageBucket: 'collegesocietyos.firebasestorage.app',
-    measurementId: 'G-N63WY3RB0X',
+    apiKey: String.fromEnvironment('FIREBASE_API_KEY_WEB'),
+    appId: String.fromEnvironment('FIREBASE_APP_ID_WEB'),
+    messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+    projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
+    authDomain: String.fromEnvironment('FIREBASE_AUTH_DOMAIN'),
+    storageBucket: String.fromEnvironment('FIREBASE_STORAGE_BUCKET'),
+    measurementId: String.fromEnvironment('FIREBASE_MEASUREMENT_ID'),
   );
 
   static const FirebaseOptions android = FirebaseOptions(
