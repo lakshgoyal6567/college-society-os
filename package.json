@@ -1,0 +1,7 @@
+{
+    "name": "college_society_os",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "bash build.sh"
+    }
+}
