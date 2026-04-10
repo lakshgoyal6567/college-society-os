@@ -1,0 +1,52 @@
+name: college_society_os
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^4.6.0
+  firebase_auth: ^6.3.0
+  cloud_firestore: ^6.2.0
+  flutter_riverpod: ^3.1.0
+  cached_network_image: ^3.4.1
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+  decimal: ^3.2.4
+  riverpod_annotation: ^4.0.0
+  qr_flutter: ^4.1.0
+  google_fonts: ^8.0.2
+  google_sign_in: 6.2.1
+  google_sign_in_web: any
+  mobile_scanner: ^7.2.0
+  mocktail: ^1.0.4
+  firebase_analytics: ^12.2.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+  shared_preferences: ^2.5.5
+  flutter_local_notifications: ^18.0.1
+  firebase_messaging: ^16.1.3
+  timezone: ^0.9.4
+  device_calendar: ^4.3.3
+  shimmer: ^3.0.0
+  image_picker: ^1.1.2
+  firebase_storage: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  build_runner: ^2.13.1
+  freezed: ^3.2.3
+  json_serializable: ^6.11.2
+  riverpod_generator: ^4.0.0+1
+
+flutter:
+  uses-material-design: true
